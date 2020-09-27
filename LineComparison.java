@@ -26,6 +26,12 @@ public class LineComparison {
 		}
 		System.out.println("Line1 length is " + line1.length + " units.");
 		System.out.println("Line1 length is " + line2.length + " units.");
-		System.out.println("The two lines are of equal length. True or false?  = " + line1.equals(line2));
+		System.out.println("\nComparing the two lines : " + Float.compare(line1.length, line2.length));
+		if (Float.compare(line1.length, line2.length) > 0)
+			System.out.println("Line1 is longer than line2.");
+		else if (Float.compare(line1.length, line2.length) < 0)
+			System.out.println("Line1 is shorter than line2.");
+		else
+			System.out.println("Line1 and line2 are of equal length.");
 	}
 }
